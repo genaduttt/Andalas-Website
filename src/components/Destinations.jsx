@@ -1,50 +1,49 @@
-import React from 'react';
+import React from "react";
 
-import borabora1 from '../assets/borabora1.jpg';
-import borabora2 from '../assets/borabora2.jpg';
-import maldives1 from '../assets/maldives1.jpg';
-import maldives2 from '../assets/maldives2.jpg';
-import maldives3 from '../assets/maldives3.jpg';
+import ampera from "/src/assets/sejarah/JembatanAmpera.jpg";
+import bukitgayo from "/src/assets/gunung/bukitgayo.jpg";
+import gunungkerinci from "/src/assets/gunung/gunungkerinci.jpg";
+import pantaitanjungtinggi from "/src/assets/gunung/pantaitanjungtinggi.jpg";
+import waykambas from "/src/assets/tempatwisata/waykambas.jpg";
 
 const Destinations = () => {
   return (
-    <section className='container px-4 flex flex-col items-center my-16'>
-      <h2 className='mb-4'>All-inclusive Resorts</h2>
-      <p className='mb-8 font-bold'>On the Caribbean's Best Beaches</p>
-      <div className='grid grid-cols-2 md:grid-cols-5 gap-4'>
-        <div className='col-span-2 md:col-span-3 md:row-span-2'>
+    <section className=" px-4 flex flex-col items-center mt-20 bg-gray-400">
+      <h2 className="mb-4">Sumatera inklusif</h2>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
+        <div className="col-span-2 md:col-span-3 md:row-span-2">
           <img
-            src={borabora1}
-            alt='borabora1'
-            className='w-full h-full object-cover'
+            src={ampera}
+            alt="borabora1"
+            className="w-full h-full object-cover"
           />
         </div>
         <div>
           <img
-            src={borabora2}
-            alt='borabora2'
-            className='w-full h-full object-cover'
+            src={bukitgayo}
+            alt="borabora2"
+            className="w-full h-full object-cover"
           />
         </div>
         <div>
           <img
-            src={maldives1}
-            alt='maldives1'
-            className='w-full h-full object-cover'
+            src={waykambas}
+            alt="maldives1"
+            className="w-full h-full object-cover"
           />
         </div>
         <div>
           <img
-            src={maldives2}
-            alt='maldives2'
-            className='w-full h-full object-cover'
+            src={gunungkerinci}
+            alt="maldives2"
+            className="w-full h-full object-cover"
           />
         </div>
         <div>
           <img
-            src={maldives3}
-            alt='maldives1'
-            className='w-full h-full object-cover'
+            src={pantaitanjungtinggi}
+            alt="maldives1"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

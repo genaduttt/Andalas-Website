@@ -1,23 +1,34 @@
-import React from 'react';
-
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Destinations from './components/Destinations';
-import Search from './components/Search';
-import Selections from './components/Selections';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Destinations from "./components/Destinations";
+import Footer from "./components/Footer";
+import BangunanBersejarah from "./components/BangunanBersejarah";
+import TempatWisata from "./components/TempatWisata";
+import AboutUs from "./components/AboutUs";
+import Gallery from "./components/Gallery";
+import Team from "./components/Team";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Destinations />
-      <Search />
-      <Selections />
-      <Carousel />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />{" "}
+          <Route path="/destinasi" element={<Destinations />} />{" "}
+          <Route
+            path="/destinasi/bangunanbersejarah"
+            element={<BangunanBersejarah />}
+          />{" "}
+          <Route path="/destinasi/tempatwisata" element={<TempatWisata />} />{" "}
+          <Route path="/aboutus" element={<AboutUs />} />{" "}
+          <Route path="/galeri" element={<Gallery />} />{" "}
+          <Route path="/team" element={<Team />} />{" "}
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 };
